@@ -23,4 +23,10 @@ public class Histogram <T> {
     public int getValueOf(T key) {
         return histogram.get(key);
     }
+
+    Iterable<T> keySet() {
+        return histogram.keySet();
+    }
+    
+    
 }
