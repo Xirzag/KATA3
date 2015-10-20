@@ -1,1 +1,2 @@
 # KATA3
+IS2 KATA 3 
