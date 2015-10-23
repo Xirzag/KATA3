@@ -13,7 +13,7 @@ public class HistogramDisplay extends ApplicationFrame {
   private final Histogram<String> histogram;
 
     public HistogramDisplay(Histogram<String> histogram) {
-        super("HISTOGRAM");
+        super("Histogram");
         this.histogram = histogram;
         setContentPane(createPanel());
         pack();

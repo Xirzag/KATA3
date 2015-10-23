@@ -5,10 +5,10 @@ import java.util.Map;
 
 public class Histogram <T> {
     
-    private final Map<T, Integer> histogram;
+    private final Map<T, Integer> histogram = new HashMap<>();
     
     public Integer increment(T key) {
-        return histogram.put(key, histogram.containsKey(key)? histogram.get(key) : 1);
+        return histogram.put(key, histogram.containsKey(key)? histogram.get(key) + 1 : 1);
     }
     
     public Map<T, Integer> calculate(T[] vector){
